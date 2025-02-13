@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #02191d;
+}
+
+.logo {
+  height: 40px;
+  width: 100px;
+  margin-left: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+  width: 1200px;
+  height: 76px;
+  border: 3px solid #05252c;
+  border-radius: 24px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-right {
+  margin-right: 20px;
+  background: #ffffff;
+  color: #02191d;
+  width: 169px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 12px;
+}
+
+main {
+  width: 700px;
+  height: 858px;
+  border: 3px solid #041e23;
+  border-radius: 40px;
+  margin: 0 auto;
+  background-color: #041e23;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: -300px;
+}
+
+.ticket-selection {
+  color: #ffffff;
+  display: flex;
+  width: 604px;
+  height: 32px;
+  margin: 32px auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.progress-container {
+  margin-bottom: -250px;
+}
+
+.bar {
+  width: 604px;
+  height: 4px;
+  background-color: #0e464f;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  width: 232px;
+  height: 4px;
+  background-color: #24a0b5;
+  border-radius: 5px;
+  position: relative;
+  left: 46px;
+  bottom: 4px;
+}
+
+section {
+  width: 604px;
+  height: 682px;
+  border: 3px solid #08252b;
+  border-radius: 32px;
+  margin: 130px auto;
+}
+
+aside {
+  width: 556px;
+  height: 200px;
+  border: 3px solid #08252b;
+  border-radius: 24px;
+  margin: 24px auto;
+}
+
+.event-details {
+  width: 508px;
+  height: 118px;
+  margin: 24px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-title {
+  width: 508px;
+  height: 62px;
+  font-size: 48px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.event-para {
+  width: 340px;
+  height: 48px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.location-details {
+  width: 359px;
+  height: 24px;
+  margin: 0 auto;
+}
+
+.location {
+  color: #ffffff;
+  text-align: center;
+}
+
+.second-bar {
+  width: 556px;
+  height: 4px;
+  background-color: #0e464f;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.select-ticket {
+  width: 556px;
+  height: 174px;
+  margin: 24px auto;
+}
+
+.select-ticket p {
+  color: #ffffff;
+}
+
+.radio-input {
+  width: 556px;
+  height: 142px;
+  background-color: #052228;
+  border: 2px solid #08252b;
+  border-radius: 24px;
+  margin: 16px auto;
+}
+
+.radio-container {
+  width: 524px;
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.btn {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-label {
+  width: 158px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+  margin-left: 16px;
+  border: 2px solid #197686;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:checked + .radio-label {
+  background-color: #197686;
+  color: white;
+  border-color: #197686;
+}
+
+.radio-label:hover {
+  background: #07373f;
+}
+
+.radio-content {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-content h2 {
+  width: 48px;
+  height: 26px;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.access-type {
+  width: 133px;
+  height: 24px;
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100px;
+  font-size: 14px;
+}
+
+.date {
+  width: 38px;
+  height: 21px;
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.regular {
+  margin-left: 30px;
+}
+
+.dropdown-input {
+  width: 556px;
+  height: 80px;
+  margin: 24px;
+}
+
+.dropdown-text {
+  width: 556px;
+  height: 24px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+.dropdown {
+  position: relative;
+  width: 556px;
+  height: 48px;
+}
+
+.dropdown select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #197686;
+  border-radius: 12px;
+  background: #08252b;
+  appearance: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.dropdown::after {
+  content: "^";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #ffffff;
+}
+
+.dropdown select:hover {
+  border-color: #197686;
+}
+
+.dropdown select:focus {
+  outline: none;
+  border-color: #197686;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+select option {
+  padding: 8px 16px;
+  background: none;
+}
+
+select option:hover {
+  background: #f0f0f0;
+}
+
+select option:checked {
+  background: #197686;
+  color: white;
+}
+
+.buttons {
+  width: 556px;
+  height: 48px;
+  margin: 24px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-cancel,
+.btn-next {
+  width: 266px;
+  height: 48px;
+}
+
+.btn-cancel {
+  background: transparent;
+  border: 2px solid #24a0b5;
+  border-radius: 8px;
+  color: #24a0b5;
+  font-size: 16px;
+}
+
+.btn-next {
+  background-color: #24a0b5;
+  border: 2px solid #24a0b5;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+}
